@@ -1,0 +1,175 @@
+/* Reset default margins and paddings */
+body, h1, h2, h3, p, ul, li, form, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the font family and background color for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Style the navigation menu */
+nav {
+    background-color: #4CAF50;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #ffffff;
+    color: #4CAF50;
+}
+
+/* Style the recipe details section */
+#recipe-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#recipe-details h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#recipe-details img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#recipe-details p {
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+#recipe-details h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#recipe-details ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#recipe-details ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#recipe-details button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#recipe-details button:hover {
+    background-color: #45a049;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* All the previous CSS styles remain the same */
+
+/* Style the rating system */
+#rating {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.stars {
+    font-size: 30px;
+}
+
+.star {
+    cursor: pointer;
+}
+
+/* Style the "Add to Favorites" button */
+#add-to-favorites {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#add-to-favorites:hover {
+    background-color: #45a049;
+}
+
+
+
+/* Make the website responsive */
+@media only screen and (max-width: 768px) {
+    /* Adjust the font size for smaller screens */
+    body {
+        font-size: 14px;
+    }
+
+    /* Center the navigation menu items vertically on smaller screens */
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Center the recipe cards on smaller screens */
+    .recipe-card {
+        text-align: center;
+    }
+
+    /* Adjust the width of the recipe cards for smaller screens */
+    .recipe-card {
+        width: 100%;
+    }
+
+    /* Adjust the width of the search input for smaller screens */
+    #search input[type="text"] {
+        width: 100%;
+    }
+
+    /* Center the "Add to Favorites" button on smaller screens */
+    #add-to-favorites {
+        display: block;
+        margin: 10px auto;
+    }
+}

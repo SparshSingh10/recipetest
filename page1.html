@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe 1 | Recipe Website</title>
+    <link rel="stylesheet" href="page1.css">
+</head>
+
+<body>
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#appetizers">Appetizers</a></li>
+            <li><a href="#main-courses">Main Courses</a></li>
+            <li><a href="#desserts">Desserts</a></li>
+        </ul>
+    </nav>
+
+    <!-- Recipe Details Section -->
+    <section id="recipe-details">
+        <h1>Recipe 1</h1>
+        <img src="recipe1.jpg" alt="Recipe 1">
+        <p>Preparation Time: 30 minutes</p>
+        <p>Cook Time: 1 hour</p>
+        <p>Total Time: 1 hour 30 minutes</p>
+        <p>Serving Size: 4</p>
+
+        <h2>Ingredients</h2>
+        <ul>
+            <li>Ingredient 1</li>
+            <li>Ingredient 2</li>
+            <li>Ingredient 3</li>
+            <!-- Add more ingredients as needed -->
+        </ul>
+
+        <h2>Instructions</h2>
+        <ol>
+            <li>Step 1: Instruction 1</li>
+            <li>Step 2: Instruction 2</li>
+            <li>Step 3: Instruction 3</li>
+            <!-- Add more instructions as needed -->
+        </ol>
+
+        <!-- Rating System -->
+        <div id="rating">
+            <h2>Rate this recipe:</h2>
+            <div class="stars">
+                <span class="star" onclick="rateRecipe(1)">&#9733;</span>
+                <span class="star" onclick="rateRecipe(2)">&#9733;</span>
+                <span class="star" onclick="rateRecipe(3)">&#9733;</span>
+                <span class="star" onclick="rateRecipe(4)">&#9733;</span>
+                <span class="star" onclick="rateRecipe(5)">&#9733;</span>
+            </div>
+            <p id="rating-message"></p>

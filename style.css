@@ -1,0 +1,160 @@
+/* Reset default margins and paddings */
+body, h1, h2, h3, p, ul, li, form, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set the font family and background color for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* Style the navigation menu */
+nav {
+    background-color: #4CAF50;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #ffffff;
+    color: #4CAF50;
+}
+
+/* Style the featured recipes section */
+#featured-recipes {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#featured-recipes h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.recipe-card {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.recipe-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.recipe-card h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.recipe-card p {
+    font-size: 16px;
+    color: #666666;
+}
+
+.recipe-card a {
+    display: block;
+    text-align: center;
+    background-color: #4CAF50;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.recipe-card a:hover {
+    background-color: #45a049;
+}
+
+/* Style the search section */
+#search {
+    text-align: center;
+    padding: 20px;
+}
+
+#search input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#search button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#search button:hover {
+    background-color: #45a049;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* All the previous CSS styles remain the same */
+
+/* Make the website responsive */
+@media only screen and (max-width: 768px) {
+    /* Adjust the font size for smaller screens */
+    body {
+        font-size: 14px;
+    }
+
+    /* Center the navigation menu items vertically on smaller screens */
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Center the recipe cards on smaller screens */
+    .recipe-card {
+        text-align: center;
+    }
+
+    /* Adjust the width of the recipe cards for smaller screens */
+    .recipe-card {
+        width: 100%;
+    }
+
+    /* Adjust the width of the search input for smaller screens */
+    #search input[type="text"] {
+        width: 100%;
+    }
+
+    /* Center the "Add to Favorites" button on smaller screens */
+    #add-to-favorites {
+        display: block;
+        margin: 10px auto;
+    }
+}
